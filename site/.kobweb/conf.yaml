@@ -1,0 +1,14 @@
+site:
+  title: "Render Ledger"
+
+server:
+  files:
+    dev:
+      contentRoot: "build/processedResources/js/main/public"
+      script: "build/kotlin-webpack/js/developmentExecutable/renderledger.js"
+      api: "build/libs/renderledger.jar"
+    prod:
+      script: "build/kotlin-webpack/js/productionExecutable/renderledger.js"
+      siteRoot: ".kobweb/site"
+
+  port: 8080
